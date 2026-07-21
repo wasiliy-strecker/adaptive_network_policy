@@ -18,4 +18,12 @@ if (decision.shouldRun) {
 }
 ```
 
-Native Android and Apple observations are added in the next focused commit.
+Native observations are available through generated, typed Pigeon channels:
+
+- Android uses `ConnectivityManager` for validation, cost, constraints,
+  roaming, congestion, suspension, Data Saver, and link estimates.
+- iOS and macOS share a Swift `NWPathMonitor` implementation for availability,
+  transport, transfer cost, and Low Data Mode.
+
+Unsupported capabilities remain `unknown` instead of being inferred. The
+package performs no probe requests and does not schedule application work.

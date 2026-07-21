@@ -20,8 +20,23 @@ topics:
 dependencies:
   flutter:
     sdk: flutter
+  meta: ^1.16.0
 
 dev_dependencies:
   flutter_lints: ^6.0.0
   flutter_test:
     sdk: flutter
+  pigeon: 27.2.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: dev.wasiliy.adaptive_network_policy
+        pluginClass: AdaptiveNetworkPolicyPlugin
+      ios:
+        pluginClass: AdaptiveNetworkPolicyPlugin
+        sharedDarwinSource: true
+      macos:
+        pluginClass: AdaptiveNetworkPolicyPlugin
+        sharedDarwinSource: true

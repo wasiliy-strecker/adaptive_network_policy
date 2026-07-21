@@ -1,11 +1,12 @@
 import '../model/network_conditions.dart';
+import 'native_network_conditions_source.dart';
 import 'network_conditions_source.dart';
 
-/// Reads conditions and exposes a stable, deduplicated stream.
+/// Reads native conditions and exposes a stable, deduplicated stream.
 final class NetworkConditionsMonitor implements NetworkConditionsSource {
-  /// Creates a monitor backed by an injected [source].
-  NetworkConditionsMonitor({required NetworkConditionsSource source})
-    : _source = source;
+  /// Creates a monitor backed by native APIs or an injected [source].
+  NetworkConditionsMonitor({NetworkConditionsSource? source})
+    : _source = source ?? NativeNetworkConditionsSource();
 
   final NetworkConditionsSource _source;
 

@@ -1,0 +1,2 @@
+Copyright 2026 Wasiliy Strecker
+SPDX-License-Identifier: MIT
