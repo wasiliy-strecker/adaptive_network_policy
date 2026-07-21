@@ -27,3 +27,18 @@ Native observations are available through generated, typed Pigeon channels:
 
 Unsupported capabilities remain `unknown` instead of being inferred. The
 package performs no probe requests and does not schedule application work.
+
+## Interactive example
+
+The responsive example combines native live observations with deterministic
+simulation scenarios and explains every policy decision.
+
+![Adaptive network policy simulation dashboard](doc/demo-dashboard.png)
+
+```sh
+cd example
+flutter run -d chrome
+```
+
+Web intentionally runs in simulation mode; Android, iOS, and macOS can switch
+between simulation and native conditions.

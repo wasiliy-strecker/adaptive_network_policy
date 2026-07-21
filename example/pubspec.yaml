@@ -1,5 +1,5 @@
 name: adaptive_network_policy_example
-description: Minimal native host for adaptive_network_policy.
+description: Interactive live and simulation demo for adaptive_network_policy.
 publish_to: none
 version: 0.1.0+1
 
@@ -9,6 +9,7 @@ environment:
 dependencies:
   adaptive_network_policy:
     path: ../
+  cupertino_icons: ^1.0.9
   flutter:
     sdk: flutter
 
