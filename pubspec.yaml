@@ -1,0 +1,27 @@
+name: adaptive_network_policy
+description: Native network conditions and deterministic execution policies for Flutter apps on Android, iOS, and macOS.
+version: 0.1.0
+homepage: https://github.com/wasiliy-strecker/adaptive_network_policy
+repository: https://github.com/wasiliy-strecker/adaptive_network_policy
+issue_tracker: https://github.com/wasiliy-strecker/adaptive_network_policy/issues
+publish_to: none
+
+environment:
+  sdk: '>=3.7.0 <4.0.0'
+  flutter: '>=3.29.0'
+
+topics:
+  - connectivity
+  - flutter-plugin
+  - low-data-mode
+  - networking
+  - policy
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
